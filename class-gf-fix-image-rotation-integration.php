@@ -47,7 +47,7 @@ if ( ! class_exists( 'GF_Fix_Image_Rotation_Integration' ) ) {
 		 */
 		public function conditionally_add_fix_image_action() {
 			if ( class_exists( 'GFFormsModel' ) && class_exists( 'Fix_Image_Rotation' ) ) {
-				add_action( 'gform_after_submission', array( $this, 'fix_image_rotation_on_file_uploads' ), 100, 2 );
+				add_action( 'gform_after_submission', array( $this, 'fix_image_rotation_on_file_uploads' ), 5, 2 );
 			}
 		}
 
