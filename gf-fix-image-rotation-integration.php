@@ -8,7 +8,6 @@
  * Author URI: http://gagan0123.com
  * License: GPLv2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: gf-fix-image-rotation-integration
  *
  * @package GF_Fix_Image_Rotation_Integration
  */
@@ -17,3 +16,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+require_once 'class-gf-fix-image-rotation-integration.php';
+
+/**
+ * Lets Initialize our plugin
+ */
+GF_Fix_Image_Rotation_Integration::get_instance();
